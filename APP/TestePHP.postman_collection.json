@@ -1,0 +1,578 @@
+{
+	"info": {
+		"_postman_id": "e2ebda2b-83de-4d5c-8e3c-5075e3df76d6",
+		"name": "TestePHP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34511130"
+	},
+	"item": [
+		{
+			"name": "clienteGET",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/API/Controller/cliente.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"API",
+						"Controller",
+						"cliente.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "produtoGET",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/API/Controller/produto.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"API",
+						"Controller",
+						"produto.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "pedidoGET",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/API/Controller/pedido.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"API",
+						"Controller",
+						"pedido.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "pedido_produtoGET",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/API/Controller/pedido_produto.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"API",
+						"Controller",
+						"pedido_produto.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "clientePOST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"nome\": \"Nome Novo\",\r\n        \"email\": \"Email Novo\",\r\n        \"telefone\": \"Telefone Novo\",\r\n        \"dataNascimento\": \"Aniversário Novo\",\r\n        \"cpf\": \"CPF Novo\",\r\n        \"endereco\": \"Endereço Novo\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/API/Controller/cliente.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"API",
+						"Controller",
+						"cliente.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "produtoPOST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"nome\": \"Nome Novo\",\r\n        \"descricao\": \"Descrição Nova\",\r\n        \"qtd\": \"Qtd Nova\",\r\n        \"marca\": \"Marca Nova\",\r\n        \"preco\": \"Preço Novo\",\r\n        \"validade\": \"Validade Nova\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/API/Controller/produto.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"API",
+						"Controller",
+						"produto.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "pedidoPOST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id_cliente\": \"8\",\r\n        \"data\": \"2006-06-20\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/API/Controller/pedido.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"API",
+						"Controller",
+						"pedido.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "pedido_produtoPOST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"id_pedido\": \"9\",\r\n        \"id_produto\": \"9\",\r\n        \"qtd\": \"9\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/API/Controller/pedido_produto.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"API",
+						"Controller",
+						"pedido_produto.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "clientePUT",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"id\": \"11\",\r\n        \"nome\": \"Nome Atualizado\",\r\n        \"email\": \"Email Atualizado\",\r\n        \"telefone\": \"Telefone Atualizado\",\r\n        \"dataNascimento\": \"Aniversário Atualizado\",\r\n        \"cpf\": \"CPF Atualizad\",\r\n        \"endereco\": \"Endereço Atualizado\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/API/Controller/cliente.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"API",
+						"Controller",
+						"cliente.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "produtoPUT",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": \"11\",\r\n        \"nome\": \"Nome Atualizado\",\r\n        \"descricao\": \"Descrição Atualizada\",\r\n        \"qtd\": \"Qtd Atualizada\",\r\n        \"marca\": \"Marca Atualizada\",\r\n        \"preco\": \"Preço Atualizado\",\r\n        \"validade\": \"Validade Atualizada\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/API/Controller/produto.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"API",
+						"Controller",
+						"produto.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "pedidoPUT",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id_pedido\": \"6\",\r\n        \"id_cliente\": \"2\",\r\n        \"data\": \"2006-09-10\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/API/Controller/pedido.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"API",
+						"Controller",
+						"pedido.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "pedido_produtoPUT",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id_pedido\": \"9\",\r\n        \"id_produto\": \"9\",\r\n        \"qtd\": \"5\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/API/Controller/pedido_produto.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"API",
+						"Controller",
+						"pedido_produto.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "clientePATCH",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"id\": 11,\r\n        \"campo\": \"CPF\",\r\n        \"novoValor\": \"Outro\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/API/Controller/cliente.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"API",
+						"Controller",
+						"cliente.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "produtoPATCH",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"id\": 11,\r\n        \"campo\": \"Marca\",\r\n        \"novoValor\": \"Outra\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/API/Controller/produto.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"API",
+						"Controller",
+						"produto.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "pedidoPATCH",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id_pedido\": 3,\r\n        \"campo\": \"data\",\r\n        \"novoValor\": \"2006-09-10\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/API/Controller/pedido.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"API",
+						"Controller",
+						"pedido.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "produto_pedidoPATCH",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"id_pedido\": \"4\",\r\n        \"campo\": \"qtd\",\r\n        \"novoValor\": \"3\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/API/Controller/pedido_produto.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"API",
+						"Controller",
+						"pedido_produto.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "clienteDELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : 11\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/API/Controller/cliente.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"API",
+						"Controller",
+						"cliente.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "produtoDELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"id\" : 11\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/API/Controller/produto.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"API",
+						"Controller",
+						"produto.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "pedidoDELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"id_pedido\" : 11\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/API/Controller/pedido.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"API",
+						"Controller",
+						"pedido.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "produto_pedidoDELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"id_pedido\" : 9\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/API/Controller/pedido_produto.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"API",
+						"Controller",
+						"pedido_produto.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
